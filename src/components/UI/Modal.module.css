@@ -1,0 +1,75 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  margin: 3% auto;
+  max-width: 1000px;
+  max-height: 800px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 1.7rem;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  animation: slide-down 300ms ease-out forwards;
+}
+
+.modal::-webkit-scrollbar {
+  width: 8px;
+  background-color: whitesmoke;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .modal {
+    display: block;
+    padding: 5px;
+    margin: 10px;
+  }
+  .modal img {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+  }
+  .modal form {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .modal button {
+    margin: 10px auto;
+    padding: 5px;
+  }
+  .modal textarea {
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,14 @@
+.inputForm {
+  margin-top: 20px;
+  background: black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.input {
+  display: flex;
+}

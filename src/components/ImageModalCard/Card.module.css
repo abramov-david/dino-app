@@ -1,0 +1,32 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  border-radius: 15px;
+  max-width: 50vw;
+  max-height: 50vh;
+  margin: 0px;
+}
+
+.commentAndButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.closeButton {
+  font-size: 1.5vw;
+  margin-left: auto;
+  transition: 1.5s ease-in-out;
+}
+
+.closeButton :hover {
+  cursor: pointer;
+  font-size: 2vw;
+  color: rgb(68, 66, 66);
+}

@@ -1,0 +1,24 @@
+.inputTextArea {
+  display: flex;
+  font-size: 0.8vw;
+  flex-direction: column;
+  margin: 20px 20px;
+  color: whitesmoke;
+}
+
+.inputTextArea label {
+  margin-bottom: 10px;
+}
+
+.inputTextArea textarea {
+  font-size: 0.8vw;
+  padding: 20px;
+  margin-left: 15px;
+  border-radius: 10px;
+  border: 0.5px solid rgba(180, 177, 177, 0.8);
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+}
